@@ -1,0 +1,5 @@
+baseURL = "http://govidat.github.io/blog/"
+languageCode = "en-us"
+title = "Blog"
+[Params]
+  Author = "Govind"
