@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://govidat.github.io/blog/post/blockchain-basics/</loc>
+    <lastmod>2017-06-20T12:05:08+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://govidat.github.io/blog/post/welcome/</loc>
     <lastmod>2017-06-17T12:49:35+05:30</lastmod>
   </url>
   
   <url>
     <loc>http://govidat.github.io/blog/</loc>
-    <lastmod>2017-06-17T12:49:35+05:30</lastmod>
+    <lastmod>2017-06-20T12:05:08+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -20,7 +25,7 @@
   
   <url>
     <loc>http://govidat.github.io/blog/post/</loc>
-    <lastmod>2017-06-17T12:49:35+05:30</lastmod>
+    <lastmod>2017-06-20T12:05:08+05:30</lastmod>
     <priority>0</priority>
   </url>
   

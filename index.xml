@@ -6,18 +6,29 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jun 2017 12:49:35 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jun 2017 12:05:08 +0530</lastBuildDate>
     
 	<atom:link href="http://govidat.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>welcome</title>
+      <title>Blockchain basics</title>
+      <link>http://govidat.github.io/blog/post/blockchain-basics/</link>
+      <pubDate>Tue, 20 Jun 2017 12:05:08 +0530</pubDate>
+      
+      <guid>http://govidat.github.io/blog/post/blockchain-basics/</guid>
+      <description>This article is to simplify blockchain to business users.
+Blockchain is an innovative way of combining the plus points of a few available technologies to meet some inherent business requirements. At its core, it uses a)distributed database and b) immutable database.
+Distributed database means that the same database is shared with many users and each have a copy of the same in their systems. This is not a new concept and there are many different uses for this.</description>
+    </item>
+    
+    <item>
+      <title>Welcome</title>
       <link>http://govidat.github.io/blog/post/welcome/</link>
       <pubDate>Sat, 17 Jun 2017 12:49:35 +0530</pubDate>
       
       <guid>http://govidat.github.io/blog/post/welcome/</guid>
-      <description>Welcome</description>
+      <description>Welcome to my blog I will try to relate my learnings in technology to the business requirements around me. It is an exciting time and there are so many technological developments in recent times. Actually too many and too difficult to keep up with them. At the same time, I am trying to relate these with the business requirements and see differentiate the useful from just cool stuff.</description>
     </item>
     
   </channel>
