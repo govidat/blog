@@ -15,12 +15,12 @@ Distributed database means that the same database is shared with many users and 
 
 Businesses is a network of interested parties that exchange value. They trade in assets that are tangible (houses/ cars/ mobiles …) or intangibles (mortgages/ shares…). They maintain these asset ownership and value details in their own Accounting Ledger, which may be in the form of ERP software or physical ledgers. The network participants need not necessarily trust each other and hence have a host of intermediaries (banks/ brokers/ agents …) to glue the network. This comes at a cost and has its own inefficiencies, including reconciliation efforts. 
 
-![As-Is](/static/img/image1.png)
+![As-Is](/blog/img/image1.png)
 Source: http://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf
 
 Now imagine a common Ledger or Accounting book in which each of these asset exchanges are maintained. Make that ledger immutable, thereby participants know that no entry gets lost or edited. Now, keep a copy of the ledger with each of the participants and thus there is no single owner of the ledger and all the participants of the network are the owners. This brings in the element of trust across the participants, without any intermediary. We will see in a separate blog on consensus / approval mechanism for the transactions to get into a shared ledger.
 
-![To-Be](/static/img/image2.png) 
+![To-Be](/blog/img/image2.png) 
 Source: http://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf
 
 
@@ -29,7 +29,7 @@ Blockchain for business is a distributed shared immutable ledger of assets excha
 ## Why is it named blockchain?
 
 The transaction contents (e.g. Time Period 1) are stored in a block and cryptographically sealed with a hash. The next set of transactions (e.g. Time Period 2) are put in the next block and this block includes a link to the previous block hash. Now this block 2 is cryptographically sealed again. Thus the database is a series of blocks which are linked to their previous blocks. Thus the name blockchain.
-![Chain](/static/img/image3.png)
+![Chain](/blog/img/image3.png)
 Source: https://bitcoin.org/bitcoin.pdf
 
 ## What is bitcoin?
