@@ -6,10 +6,25 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Jun 2017 12:05:08 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 02 Jul 2017 10:16:20 +0530</lastBuildDate>
     
 	<atom:link href="http://govidat.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blockchain basics - cryptography</title>
+      <link>http://govidat.github.io/blog/post/blockchain-basics-cryptography/</link>
+      <pubDate>Sun, 02 Jul 2017 10:16:20 +0530</pubDate>
+      
+      <guid>http://govidat.github.io/blog/post/blockchain-basics-cryptography/</guid>
+      <description>Source: https://bitcoin.org/bitcoin.pdf
+A blockchain database is immutable and is cryptographically protected.
+This article is on few very basic aspects of cryptography.
+SHA-256 SHA-2 (Secure Hash Algorithm) is a set of cryptographic hash functions designed by United States NSA.
+Key aspects of a hash function are :
+ It is a one way function. From a known output value one cannot derive the input value.
+ It mathematically converts the input to a standard sized output.</description>
+    </item>
     
     <item>
       <title>Blockchain basics</title>
