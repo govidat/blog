@@ -31,11 +31,11 @@ The hex value using SHA-256 using an online convertor
 
 http://hash.online-convert.com/sha256-generator:
 
-** “Hello” = 185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969 **
+**“Hello” = 185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969**
 
 For a small change in input the hash value changes a lot:
 
-** “Hello.”= 2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7 **
+**“Hello.”= 2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7**
 
 In a related scenario like businesses tenders, all bidders provide a sealed cover of their financial bid. Instead, they can as well give the hash value of the soft copy of their bid. Like a sealed cover, nothing can be extracted from the hash value and the content remains undisclosed. Later, like opening the tender, the bidder can reveal the soft copy document. Others can easily verify that soft copy has not been altered, by just checking if the hash of this soft copy matches the previous hash value. 
 
