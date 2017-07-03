@@ -63,7 +63,7 @@ With this link, in a blockchain, if any transaction is altered or corrupted, the
 
 There is still a possibility of all future block hashes also reconstructed by a bad element. That is a separate discussion topic. 
 
-## My other articles relevant to this topic
+### Related article
 
 Blockchain basics : [github](https://govidat.github.io/blog/post/blockchain-basics/) [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)
 
