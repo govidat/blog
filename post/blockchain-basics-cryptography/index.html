@@ -8,24 +8,24 @@
   <title>Blockchain basics - cryptography</title>
   <meta property="og:title" content="Blockchain basics - cryptography" />
   <meta name="twitter:title" content="Blockchain basics - cryptography" />
-  <meta name="description" content="Source: https://bitcoin.org/bitcoin.pdf
+  <meta name="description" content="Source: Bitcoin paper
 A blockchain database is immutable and is cryptographically protected.
 This article is on few very basic aspects of cryptography.
 SHA-256 SHA-2 (Secure Hash Algorithm) is a set of cryptographic hash functions designed by United States NSA.
 Key aspects of a hash function are :
  It is a one way function. From a known output value one cannot derive the input value.
  It mathematically converts the input to a standard sized output.">
-  <meta property="og:description" content="Source: https://bitcoin.org/bitcoin.pdf
+  <meta property="og:description" content="Source: Bitcoin paper
 A blockchain database is immutable and is cryptographically protected.
 This article is on few very basic aspects of cryptography.
 SHA-256 SHA-2 (Secure Hash Algorithm) is a set of cryptographic hash functions designed by United States NSA.
 Key aspects of a hash function are :
  It is a one way function. From a known output value one cannot derive the input value.
  It mathematically converts the input to a standard sized output.">
-  <meta name="twitter:description" content="Source: https://bitcoin.org/bitcoin.pdf
+  <meta name="twitter:description" content="Source: Bitcoin paper
 A blockchain database is immutable and is cryptographically protected.
 This article is on few very basic aspects of cryptography.
-SHA-256 SHA-2 (Secure Hash …">
+SHA-256 SHA-2 (Secure Hash Algorithm) is a set …">
   <meta name="author" content=""/>
   <meta name="twitter:card" content="summary" />
   <meta property="og:url" content="http://govidat.github.io/blog/post/blockchain-basics-cryptography/" />
@@ -175,7 +175,7 @@ SHA-256 SHA-2 (Secure Hash …">
         
 
 <p><img src="/blog/img/image4.png" alt="Bitcoin" />
-Source: <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a></p>
+Source: <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin paper</a></p>
 
 <p>A blockchain database is immutable and is cryptographically protected.</p>
 
@@ -198,15 +198,17 @@ Source: <a href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pd
 </ul>
 
 <p>For e.g.
-The hex value using SHA-256 using an online convertor</p>
+The hex value using SHA-256 using any <a href="http://hash.online-convert.com/sha256-generator">online convertor</a> for</p>
 
-<p><a href="http://hash.online-convert.com/sha256-generator:">http://hash.online-convert.com/sha256-generator:</a></p>
+<h3 id="hello">“Hello”</h3>
 
-<p><strong>“Hello” = 185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969</strong></p>
+<p>185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969</p>
 
 <p>For a small change in input the hash value changes a lot:</p>
 
-<p><strong>“Hello.”= 2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7</strong></p>
+<h3 id="hello-1">“Hello.”</h3>
+
+<p>2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7</p>
 
 <p>In a related scenario like businesses tenders, all bidders provide a sealed cover of their financial bid. Instead, they can as well give the hash value of the soft copy of their bid. Like a sealed cover, nothing can be extracted from the hash value and the content remains undisclosed. Later, like opening the tender, the bidder can reveal the soft copy document. Others can easily verify that soft copy has not been altered, by just checking if the hash of this soft copy matches the previous hash value.</p>
 
@@ -215,7 +217,7 @@ The hex value using SHA-256 using an online convertor</p>
 <p>In blockchain the transactions are stored in a block. This block of transactions can be passed through a hashing algorithm like SHA-256 and we will get a hash.
 For e.g.:
 <img src="/blog/img/image5.png" alt="Block hash" />
-Source: <a href="https://anders.com/blockchain/hash.html">https://anders.com/blockchain/hash.html</a></p>
+<a href="https://anders.com/blockchain/hash.html">Source</a></p>
 
 <p>Now this block includes the hash value in its header.</p>
 

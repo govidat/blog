@@ -17,7 +17,7 @@
       <pubDate>Sun, 02 Jul 2017 10:16:20 +0530</pubDate>
       
       <guid>http://govidat.github.io/blog/post/blockchain-basics-cryptography/</guid>
-      <description>Source: https://bitcoin.org/bitcoin.pdf
+      <description>Source: Bitcoin paper
 A blockchain database is immutable and is cryptographically protected.
 This article is on few very basic aspects of cryptography.
 SHA-256 SHA-2 (Secure Hash Algorithm) is a set of cryptographic hash functions designed by United States NSA.
