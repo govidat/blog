@@ -45,7 +45,7 @@ In a related scenario like businesses tenders, all bidders provide a sealed cove
 
 In blockchain the transactions are stored in a block. This block of transactions can be passed through a hashing algorithm like SHA-256 and we will get a hash. 
 For e.g.: 
-![Block hash](/blog/img/image5.png)
+![Block hash](/blog/img/image5.png)  
 [Source](https://anders.com/blockchain/hash.html)
 
 Now this block includes the hash value in its header. 
