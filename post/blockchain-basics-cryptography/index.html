@@ -212,6 +212,10 @@ The hex value using SHA-256 using any <a href="http://hash.online-convert.com/sh
 
 <p>In a related scenario like businesses tenders, all bidders provide a sealed cover of their financial bid. Instead, they can as well give the hash value of the soft copy of their bid. Like a sealed cover, nothing can be extracted from the hash value and the content remains undisclosed. Later, like opening the tender, the bidder can reveal the soft copy document. Others can easily verify that soft copy has not been altered, by just checking if the hash of this soft copy matches the previous hash value.</p>
 
+<p>A simple use case of this one way function is used in securing our passwords by better secured websites. They store the <strong>hash of our password</strong> in their system. When user signs in with password, the website hashes the input and compares with the password hash stored in their system. Thus, even if their systems are hacked, only our useless password hash leaks. This is the reason, <em>forgot password</em> option in these sites only allows us to reset the password and never provides our old password.</p>
+
+<p>In another use case, hash is used to filter spams in our email. Our email header consists of a hash of some header contents of our email. At the senders end, this hash is calculated and included in the email header. Any calculation takes some effort and a spammer avoids this calculation. For a normal sender and receiver the hash calculation and verification effort is imperceptible.</p>
+
 <h2 id="block-hash">Block hash</h2>
 
 <p>In blockchain the transactions are stored in a block. This block of transactions can be passed through a hashing algorithm like SHA-256 and we will get a hash.
