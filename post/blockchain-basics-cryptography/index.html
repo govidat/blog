@@ -238,6 +238,32 @@ For e.g.:
 
 <p>There is still a possibility of all future block hashes also reconstructed by a bad element. That is a separate discussion topic.</p>
 
+<p><img src="/blog/img/image8.png" alt="Keys" />
+Source: <a href="https://en.wikipedia.org/wiki/Public-key_cryptography">Wiki</a></p>
+
+<h2 id="keys-for-digital-signatures">Keys for digital signatures</h2>
+
+<p>A digital signature is the equivalent of a physical signature and it needs to meet two important requirements.<br />
+1. Authentication : Only the holder of the signature could sign that way and others can easily verify the signatory and<br />
+2. The signature cannot be copied by others</p>
+
+<p>In the public key cryptography, using mathematical functions, a program generates a Private/Secret Key and a corresponding pair of Public Key.</p>
+
+<p>Few of the properties of this cryptographic function are:
+1.  Sign/ Encrypt a document / message with this Secret Key ; Sign = (message + Secret Key)
+2.  Any one with the corresponding Public Key can verify/ decrypt ; Derive message with (Sign + public key)</p>
+
+<p>The first requirement of authentication is immediately satisfied. Sign includes the message + Secret Key. Hence only the owner of the Secret Key alone can sign any message / documents. Even if the corresponding Public keys are shared, the same can only be used to verify/ decrypt and not to Sign. Thus this digital signature cannot be copied by others.<br />
+<a href="http://bitcoinbook.cs.princeton.edu">Source:</a></p>
+
+<h2 id="public-key-as-identity">Public Key as identity</h2>
+
+<p>In another way, a public key acts as ones identity. One can just provide their public key to others and they can easily verify the signed messages. One can remain anonymous by generating as many combinations of the private/secret key and their corresponding public key.</p>
+
+<p>In the bitcoin world, all the transactions are publicly available and one can see only the public keys.</p>
+
+<p>Also this combination of private/secret key and their corresponding public key cannot be forged or hacked. Blockchain transactions have this signing process and thus they give a finality to the transactions.</p>
+
 <h3 id="related-article">Related article</h3>
 
 <p>Blockchain basics : <a href="https://govidat.github.io/blog/post/blockchain-basics/">github</a> <a href="https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r">Linkedin</a></p>
