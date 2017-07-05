@@ -67,6 +67,32 @@ With this link, in a blockchain, if any transaction is altered or corrupted, the
 
 There is still a possibility of all future block hashes also reconstructed by a bad element. That is a separate discussion topic. 
 
+![Keys](/blog/img/image8.png)
+Source: [Wiki](https://en.wikipedia.org/wiki/Public-key_cryptography)
+
+## Keys for digital signatures
+
+A digital signature is the equivalent of a physical signature and it needs to meet two important requirements.  
+1. Authentication : Only the holder of the signature could sign that way and others can easily verify the signatory and  
+2. The signature cannot be copied by others
+
+In the public key cryptography, using mathematical functions, a program generates a Private/Secret Key and a corresponding pair of Public Key.  
+
+Few of the properties of this cryptographic function are:
+1.  Sign/ Encrypt a document / message with this Secret Key ; Sign = (message + Secret Key)
+2.  Any one with the corresponding Public Key can verify/ decrypt ; Derive message with (Sign + public key)
+
+The first requirement of authentication is immediately satisfied. Sign includes the message + Secret Key. Hence only the owner of the Secret Key alone can sign any message / documents. Even if the corresponding Public keys are shared, the same can only be used to verify/ decrypt and not to Sign. Thus this digital signature cannot be copied by others.  
+[Source:](http://bitcoinbook.cs.princeton.edu) 
+
+## Public Key as identity
+
+In another way, a public key acts as ones identity. One can just provide their public key to others and they can easily verify the signed messages. One can remain anonymous by generating as many combinations of the private/secret key and their corresponding public key. 
+
+In the bitcoin world, all the transactions are publicly available and one can see only the public keys.
+
+Also this combination of private/secret key and their corresponding public key cannot be forged or hacked. Blockchain transactions have this signing process and thus they give a finality to the transactions. 
+
 ### Related article
 
 Blockchain basics : [github](https://govidat.github.io/blog/post/blockchain-basics/) [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)
