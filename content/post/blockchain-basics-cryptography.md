@@ -79,8 +79,8 @@ A digital signature is the equivalent of a physical signature and it needs to me
 
 In the public key cryptography, using mathematical functions, a program generates a Private/Secret Key and a corresponding pair of Public Key.  
 
-Few of the properties of this cryptographic function are:
-1.  Sign/ Encrypt a document / message with this Secret Key ; Sign = (message + Secret Key)
+Few of the properties of this cryptographic function are:  
+1.  Sign/ Encrypt a document / message with this Secret Key ; Sign = (message + Secret Key)  
 2.  Any one with the corresponding Public Key can verify/ decrypt ; Derive message with (Sign + public key)
 
 The first requirement of authentication is immediately satisfied. Sign includes the message + Secret Key. Hence only the owner of the Secret Key alone can sign any message / documents. Even if the corresponding Public keys are shared, the same can only be used to verify/ decrypt and not to Sign. Thus this digital signature cannot be copied by others.  
