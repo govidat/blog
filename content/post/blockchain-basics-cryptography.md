@@ -67,10 +67,11 @@ With this link, in a blockchain, if any transaction is altered or corrupted, the
 
 There is still a possibility of all future block hashes also reconstructed by a bad element. That is a separate discussion topic. 
 
-![Keys](/blog/img/image8.png)
-Source: [Wiki](https://en.wikipedia.org/wiki/Public-key_cryptography)
 
 ## Keys for digital signatures
+
+![Keys](/blog/img/image8.png)  
+Source: [Wiki](https://en.wikipedia.org/wiki/Public-key_cryptography)  
 
 A digital signature is the equivalent of a physical signature and it needs to meet two important requirements.  
 1. Authentication : Only the holder of the signature could sign that way and others can easily verify the signatory and  
