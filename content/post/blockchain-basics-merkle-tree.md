@@ -53,6 +53,6 @@ Source: [Bitcoin paper](https://bitcoin.org/bitcoin.pdf)
 
 ### Related article
 
-Blockchain basics : [github](https://govidat.github.io/blog/post/blockchain-basics/) / [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
+Blockchain basics                : [github](https://govidat.github.io/blog/post/blockchain-basics/) / [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
 Blockchain basics - cryptography : [github](https://govidat.github.io/blog/post/blockchain-basics-cryptography/) / [Linkedin](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  
 
