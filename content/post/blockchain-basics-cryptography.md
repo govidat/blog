@@ -96,7 +96,7 @@ Also this combination of private/secret key and their corresponding public key c
 
 ### Related article
 
-Blockchain basics                : [github](https://govidat.github.io/blog/post/blockchain-basics/) / [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
-Blockchain basics - Merkle tree  : [github](https://govidat.github.io/blog/post/blockchain-basics-merkle-tree/) / [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  
+[Blockchain basics](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
+[Blockchain basics - Merkle tree](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  
 
 
