@@ -9,14 +9,14 @@ title = "Blockchain basics - Merkle tree"
 
 
 All the transactions that ever happened in a bitcoin are stored in the distributed database.   
-- Does it mean that a participant has to manage a very large database? 
+- Does it mean that a participant has to manage a very large database?   
 - Does it mean that to verify if a transaction is valid, one has to process all the data from the very beginning?
 
 Answer lies in Merkle tree and this article is to touch on few basics. 
 
 ## Merkle tree
 
-In cryptography and computer science, a hash tree or Merkle tree is a tree in which every non-leaf node is labelled with the hash of the labels or values (in case of leaves) of its child nodes. [wiki kink](https://en.wikipedia.org/wiki/Merkle_tree)  
+“In cryptography and computer science, a hash tree or Merkle tree is a tree in which every non-leaf node is labelled with the hash of the labels or values (in case of leaves) of its child nodes.” [Wiki Link](https://en.wikipedia.org/wiki/Merkle_tree)  
 
 In the above diagram, the transactions are at the leaf level. Hash of two transactions (Tx0 and Tx1) are again hashed and a non-leaf node of Hash01 is formed. Similarly Hash23, Hash45 etc are formed. A tree is formed and at the top of the tree is the Top Hash or the Root Hash. 
 
@@ -35,9 +35,9 @@ To verify that a transaction is part of a block )or a hash tree), one needs the 
 
 ![Verification](/blog/img/image11.png)
 
-To verify that Tx0 is in the block, one needs the details of 
-- Tx0   
-- Hash1 and 
+To verify that Tx0 is in the block, one needs the details of  
+- Tx0     
+- Hash1 and   
 - Hash23  
 With this one can quickly recalculate Root Hash and verify that Tx0 is part of this block.
 
@@ -53,6 +53,6 @@ Source: [Bitcoin paper](https://bitcoin.org/bitcoin.pdf)
 
 ### Related article
 
-Blockchain basics : [github](https://govidat.github.io/blog/post/blockchain-basics/) [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
-Blockchain basics - cryptography : [github](https://govidat.github.io/blog/post/blockchain-basics-cryptography/) [Linkedin](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  
+Blockchain basics : [github](https://govidat.github.io/blog/post/blockchain-basics/) / [Linkedin](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
+Blockchain basics - cryptography : [github](https://govidat.github.io/blog/post/blockchain-basics-cryptography/) / [Linkedin](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  
 
