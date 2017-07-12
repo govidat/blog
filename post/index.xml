@@ -17,9 +17,10 @@
       <pubDate>Wed, 12 Jul 2017 15:04:19 +0530</pubDate>
       
       <guid>http://govidat.github.io/blog/post/blockchain-basics-merkle-tree/</guid>
-      <description>Source: Bitcoin paper
-All the transactions that ever happened in a bitcoin is stored in the database. This is a distributed database and a copy is available with all the participants. Does it mean that a participant has to manage a very large database to manage? Does it mean that to verify if a transaction is valid, one has to process all the data from the very beginning?
-Answer lies in Merkle tree and this article is to touch on few basics.</description>
+      <description>All the transactions that ever happened in a bitcoin are stored in the distributed database.
+- Does it mean that a participant has to manage a very large database? - Does it mean that to verify if a transaction is valid, one has to process all the data from the very beginning?
+Answer lies in Merkle tree and this article is to touch on few basics.
+Merkle tree In cryptography and computer science, a hash tree or Merkle tree is a tree in which every non-leaf node is labelled with the hash of the labels or values (in case of leaves) of its child nodes.</description>
     </item>
     
     <item>
