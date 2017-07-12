@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Jul 2017 10:16:20 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jul 2017 15:04:19 +0530</lastBuildDate>
     
 	<atom:link href="http://govidat.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blockchain basics - Merkle tree</title>
+      <link>http://govidat.github.io/blog/post/blockchain-basics-merkle-tree/</link>
+      <pubDate>Wed, 12 Jul 2017 15:04:19 +0530</pubDate>
+      
+      <guid>http://govidat.github.io/blog/post/blockchain-basics-merkle-tree/</guid>
+      <description>Source: Bitcoin paper
+All the transactions that ever happened in a bitcoin is stored in the database. This is a distributed database and a copy is available with all the participants. Does it mean that a participant has to manage a very large database to manage? Does it mean that to verify if a transaction is valid, one has to process all the data from the very beginning?
+Answer lies in Merkle tree and this article is to touch on few basics.</description>
+    </item>
     
     <item>
       <title>Blockchain basics - cryptography</title>
