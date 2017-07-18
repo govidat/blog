@@ -98,5 +98,6 @@ Also this combination of private/secret key and their corresponding public key c
 
 [Blockchain basics](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
 [Blockchain basics - Merkle tree](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  
+[Blockchain basics - Byzantine fault tolerance](https://www.linkedin.com/pulse/blockchain-basics-byzantine-fault-tolerance-govindarajan-r)  
 
 
