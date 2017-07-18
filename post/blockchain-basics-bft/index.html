@@ -5,25 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Blockchain basics</title>
-  <meta property="og:title" content="Blockchain basics" />
-  <meta name="twitter:title" content="Blockchain basics" />
-  <meta name="description" content="This article is to simplify blockchain to business users.
-Blockchain is an innovative way of combining the plus points of a few available technologies to meet some inherent business requirements. At its core, it uses a)distributed database and b) immutable database.
-Distributed database means that the same database is shared with many users and each have a copy of the same in their systems. This is not a new concept and there are many different uses for this.">
-  <meta property="og:description" content="This article is to simplify blockchain to business users.
-Blockchain is an innovative way of combining the plus points of a few available technologies to meet some inherent business requirements. At its core, it uses a)distributed database and b) immutable database.
-Distributed database means that the same database is shared with many users and each have a copy of the same in their systems. This is not a new concept and there are many different uses for this.">
-  <meta name="twitter:description" content="This article is to simplify blockchain to business users.
-Blockchain is an innovative way of combining the plus points of a few available technologies to meet some inherent business requirements. At …">
+  <title>Blockchain basics - Byzantine fault tolerance</title>
+  <meta property="og:title" content="Blockchain basics - Byzantine fault tolerance" />
+  <meta name="twitter:title" content="Blockchain basics - Byzantine fault tolerance" />
+  <meta name="description" content="Source: BFT paper
+In a permission less blockchain, all the nodes have equal rights. There is a consensus process to make it a trusted network.
+- Does it mean that all participants are trust worthy?
+- What happens to the network, if a few participants are bad elements (either maliciously or due to connection issues)?
+Answer lies in the well researched Byzantine fault tolerance and this article is to touch on few basics.">
+  <meta property="og:description" content="Source: BFT paper
+In a permission less blockchain, all the nodes have equal rights. There is a consensus process to make it a trusted network.
+- Does it mean that all participants are trust worthy?
+- What happens to the network, if a few participants are bad elements (either maliciously or due to connection issues)?
+Answer lies in the well researched Byzantine fault tolerance and this article is to touch on few basics.">
+  <meta name="twitter:description" content="Source: BFT paper
+In a permission less blockchain, all the nodes have equal rights. There is a consensus process to make it a trusted network.
+- Does it mean that all participants are trust worthy?
+- …">
   <meta name="author" content=""/>
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="http://govidat.github.io/blog/post/blockchain-basics/" />
+  <meta property="og:url" content="http://govidat.github.io/blog/post/blockchain-basics-bft/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Blog" />
 
   <meta name="generator" content="Hugo 0.23" />
-  <link rel="canonical" href="http://govidat.github.io/blog/post/blockchain-basics/" />
+  <link rel="canonical" href="http://govidat.github.io/blog/post/blockchain-basics-bft/" />
   <link rel="alternate" href="http://govidat.github.io/blog/index.xml" type="application/rss+xml" title="Blog">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -139,11 +145,11 @@ Blockchain is an innovative way of combining the plus points of a few available 
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Blockchain basics</h1>
+              <h1>Blockchain basics - Byzantine fault tolerance</h1>
                 
                 
                   <span class="post-meta">
-  Posted on June 20, 2017
+  Posted on July 17, 2017
   
 </span>
 
@@ -164,57 +170,68 @@ Blockchain is an innovative way of combining the plus points of a few available 
       <article role="main" class="blog-post">
         
 
-<p>This article is to simplify blockchain to business users.</p>
+<p><img src="/blog/img/image13.png" alt="BFT" /><br />
+Source: <a href="https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Fbyz.pdf">BFT paper</a></p>
 
-<p>Blockchain is an innovative way of combining the plus points of a few available technologies to meet some inherent business requirements. At its core, it uses a)distributed database and b) immutable database.</p>
+<p>In a permission less blockchain, all the nodes have equal rights. There is a consensus process to make it a trusted network.<br />
+- Does it mean that all participants are trust worthy?<br />
+- What happens to the network, if a few participants are bad elements (either maliciously or due to connection issues)?</p>
 
-<p>Distributed database means that the same database is shared with many users and each have a copy of the same in their systems. This is not a new concept and there are many different uses for this. Immutable database means that no data can be deleted or edited. Old data remains as is and new content gets just added to this database. Both these concepts, when put together, provides new value and opens up opportunities for having faith/trust in the data that is stored in such databases.</p>
+<p>Answer lies in the well researched Byzantine fault tolerance and this article is to touch on few basics.</p>
 
-<h2 id="what-is-in-it-for-businesses">What is in it for businesses?</h2>
+<h2 id="byzantine-fault-tolerance">Byzantine fault tolerance</h2>
 
-<p>Businesses is a network of interested parties that exchange value. They trade in assets that are tangible (houses/ cars/ mobiles …) or intangibles (mortgages/ shares…). They maintain these asset ownership and value details in their own Accounting Ledger, which may be in the form of ERP software or physical ledgers. The network participants need not necessarily trust each other and hence have a host of intermediaries (banks/ brokers/ agents …) to glue the network. This comes at a cost and has its own inefficiencies, including reconciliation efforts.</p>
+<p>As per <a href="https://en.wikipedia.org/wiki/Byzantine_fault_tolerance#Byzantine_Generals.27_Problem">wiki:</a><br />
+“A Byzantine fault is any fault presenting different symptoms to different observers. A Byzantine failure is the loss of a system service due to a Byzantine fault in systems that require consensus.”</p>
 
-<p><img src="/blog/img/image1.png" alt="As-Is" /><br />
-Source: <a href="http://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf">IBM document</a></p>
+<p>Byzantine fault tolerance is to be able to defend against such failures - say a few bad elements in a permission less blockchain like bitcoin.<br />
+Byzantine refers to the Byzantines General’s problem as explained in this 1982 paper by <a href="https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Fbyz.pdf">Leslie Lamport, Robert Shostak and Marshall Pease.</a></p>
 
-<p>Now imagine a common Ledger or Accounting book in which each of these asset exchanges are maintained. Make that ledger immutable, thereby participants know that no entry gets lost or edited. Now, keep a copy of the ledger with each of the participants and thus there is no single owner of the ledger and all the participants of the network are the owners. This brings in the element of trust across the participants, without any intermediary. We will see in a separate blog on consensus / approval mechanism for the transactions to get into a shared ledger.</p>
+<h2 id="byzantine-generals-problem">Byzantine Generals Problem</h2>
 
-<p><img src="/blog/img/image2.png" alt="To-Be" /><br />
-Source: <a href="http://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf">IBM document</a></p>
+<p>As per <a href="https://en.wikipedia.org/wiki/Byzantine_fault_tolerance#Byzantine_Generals.27_Problem">wiki:</a>:<br />
+“The Byzantine Generals Problem is with a group of generals, each commanding a portion of the Byzantine army, encircle a city. These generals wish to formulate a plan for attacking the city. In its simplest form, the generals must only decide whether to attack or retreat. Some generals may prefer to attack, while others prefer to retreat. The important thing is that every general agrees on a common decision, for a halfhearted attack by a few generals would become a rout and be worse than a coordinated attack or a coordinated retreat.”</p>
 
-<p>Blockchain for business is a distributed shared immutable ledger of assets exchanged across its network participants.</p>
+<p><img src="/blog/img/image14.png" alt="BFT" /><br />
+Source: <a href="https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Fbyz.pdf">BFT paper</a></p>
 
-<h2 id="why-is-it-named-blockchain">Why is it named blockchain?</h2>
+<p>“The problem is complicated by the presence of traitorous generals who may not only cast a vote for a suboptimal strategy, they may do so selectively. For instance, if nine generals are voting, four of whom support attacking while four others are in favor of retreat, the ninth general may send a vote of retreat to those generals in favor of retreat, and a vote of attack to the rest. Those who received a retreat vote from the ninth general will retreat, while the rest will attack (which may not go well for the attackers). The problem is complicated further by the generals being physically separated and having to send their votes via messengers who may fail to deliver votes or may forge false votes.”</p>
 
-<p>The transaction contents (e.g. Time Period 1) are stored in a block and cryptographically sealed with a hash. The next set of transactions (e.g. Time Period 2) are put in the next block and this block includes a link to the previous block hash. Now this block 2 is cryptographically sealed again. Thus the database is a series of blocks which are linked to their previous blocks. Thus the name blockchain.
-<img src="/blog/img/image3.png" alt="Chain" />
+<p><img src="/blog/img/image15.png" alt="BFT" /><br />
+Source: <a href="https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Fbyz.pdf">BFT paper</a></p>
+
+<p>The typical mapping of this story onto blockchain is that the network nodes are the generals and their digital communication system links are the messengers.</p>
+
+<p>In the paper referred above, several solutions have been proposed.</p>
+
+<h2 id="permissionless-blockchain-bitcoin">Permissionless blockchain - Bitcoin</h2>
+
+<p>Bitcoin has successfully overcome the BFT problem by using “Proof-of-Work” or “mining”.<br />
+Proof-of-Work involves scanning for a value (nonce) that when hashed, the (block) hash begins with a specific number of zero bits.</p>
+
+<p><img src="/blog/img/image16.png" alt="BFT" /><br />
 Source: <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin paper</a></p>
 
-<h2 id="what-is-bitcoin">What is bitcoin?</h2>
+<p>For example if we have a few transactions in a block, the hash value without the nonce is as below:
+<img src="/blog/img/image17.png" alt="Block hash" /><br />
+Source: <a href="https://anders.com/blockchain/hash.html">anders</a></p>
 
-<p>Bitcoin is a cryptocurrency which is run on a public permission less blockchain. Permission less means that any one can participate in this bitcoin network and exchange this bitcoin cryptocurrency. The asset being exchanged is cryptocurrency called bitcoin.</p>
+<p>Assuming Proof-of-work needs that the resultant hash must start with 0000. We now need to find a nonce value that would satisfy this condition. After trying many combinations, we find that a nonce value of “67068” makes the hash value of the block start with “0000”.<br />
+<img src="/blog/img/image18.png" alt="Block hash" /><br />
+Source: <a href="https://anders.com/blockchain/hash.html">anders</a></p>
 
-<h2 id="permissioned-blockchain-for-businesses">Permissioned blockchain for businesses:</h2>
+<p>This process of finding the nonce value is “mining” and the first miner gets rewarded with bitcoins.</p>
 
-<p>For business requirements, we are most likely to have permissioned network, by which the participants of the network are controlled and only selected participants are included in the network.</p>
+<p>However, this process consumes enormous power for just finding a random number!</p>
 
-<h2 id="inherent-advantages-of-a-blockchain-network">Inherent advantages of a blockchain network:</h2>
+<h2 id="permissioned-blockchains">Permissioned blockchains</h2>
 
-<h3 id="provenance">Provenance:</h3>
-
-<p>Shared ledger is immutable and the blocks of transactions are linked to their previous ones, going back to the origin. Imagine a car with a Vin number in a blockchain network. Over its lifecycle , the ownership of this asset changes multiple times. Authorized participants will get to see the complete history of exchange of ownership of this asset across its life cycle. The transactions are immutable and are linked and hence the complete link is established. Thus, at any point of time, the network knows the exact provenance of an asset. Extend this logic to Land Records, Supply chain of perishables, foods, medicines , diamonds …</p>
-
-<h3 id="immutability">Immutability:</h3>
-
-<p>A blockchain is immutable and all the database contents remain for ever. No participant can change/ edit any content in their copy of the database. The underlying cryptography of hashing a block content and including this hash in the next block ensures that any change in a previous block would corrupt the chain. This corruption of data would be easily visible to the network. The network has the uncorrupted database with many participants and there are easy mechanisms to self correct.</p>
-
-<h3 id="finality">Finality:</h3>
-
-<p>The immutability and sharing of the same ledger content across all its participants provides a finality to the transaction and thus the trust to all its participants. The need for any reconciliation across participants is completely eliminated. Many subsequent business processes can function with this finality well established.</p>
+<p>Permission blockchains like Hyperledger fabric have different and more energy efficient algorithms for overcoming the Byzantine Generals Problem.</p>
 
 <h3 id="related-articles">Related articles</h3>
 
-<p><a href="https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r">Blockchain basics - cryptography</a><br />
+<p><a href="https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r">Blockchain basics</a><br />
+<a href="https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r">Blockchain basics - cryptography</a><br />
 <a href="https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r">Blockchain basics - Merkle tree</a></p>
 
       </article>
@@ -222,13 +239,9 @@ Source: <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin paper</a></p>
       <ul class="pager blog-pager">
         
           <li class="previous">
-            <a href="http://govidat.github.io/blog/post/welcome/" data-toggle="tooltip" data-placement="top" title="Welcome">&larr; Previous Post</a>
+            <a href="http://govidat.github.io/blog/post/blockchain-basics-merkle-tree/" data-toggle="tooltip" data-placement="top" title="Blockchain basics - Merkle tree">&larr; Previous Post</a>
           </li>
         
-        
-          <li class="next">
-            <a href="http://govidat.github.io/blog/post/blockchain-basics-cryptography/" data-toggle="tooltip" data-placement="top" title="Blockchain basics - cryptography">Next Post &rarr;</a>
-          </li>
         
       </ul>
 
