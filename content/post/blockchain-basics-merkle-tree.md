@@ -51,7 +51,7 @@ In the bitcoin world, the spent transactions can be discarded to save space. Mer
 ![Pruning](/blog/img/image12.png)  
 Source: [Bitcoin paper](https://bitcoin.org/bitcoin.pdf)  
 
-### Related article
+### Related articles
 
 [Blockchain basics](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
 [Blockchain basics - cryptography](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  

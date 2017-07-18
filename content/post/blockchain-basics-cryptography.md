@@ -94,7 +94,7 @@ In the bitcoin world, all the transactions are publicly available and one can se
 
 Also this combination of private/secret key and their corresponding public key cannot be forged or hacked. Blockchain transactions have this signing process and thus they give a finality to the transactions. 
 
-### Related article
+### Related articles
 
 [Blockchain basics](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
 [Blockchain basics - Merkle tree](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  

@@ -54,7 +54,7 @@ A blockchain is immutable and all the database contents remain for ever. No part
 
 The immutability and sharing of the same ledger content across all its participants provides a finality to the transaction and thus the trust to all its participants. The need for any reconciliation across participants is completely eliminated. Many subsequent business processes can function with this finality well established.
 
-### Related article
+### Related articles
 
 [Blockchain basics - cryptography](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  
 [Blockchain basics - Merkle tree](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  
