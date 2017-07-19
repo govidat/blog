@@ -56,6 +56,6 @@ The immutability and sharing of the same ledger content across all its participa
 
 ### Related articles
 
-[Blockchain basics - Cryptography](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  
-[Blockchain basics - Merkle tree](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  
-[Blockchain basics - Byzantine fault tolerance](https://www.linkedin.com/pulse/blockchain-basics-byzantine-fault-tolerance-govindarajan-r)  
+Blockchain basics - Cryptography  [LinkedIn](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  /  [GitHub](https://govidat.github.io/blog/post/blockchain-basics-cryptography/)    
+Blockchain basics - Merkle tree [LinkedIn](https://www.linkedin.com/pulse/blockchain-basics-merkle-tree-govindarajan-r)  /  [GitHub](https://govidat.github.io/blog/post/blockchain-basics-merkle-tree/)    
+Blockchain basics - Byzantine fault tolerance [LinkedIn](https://www.linkedin.com/pulse/blockchain-basics-byzantine-fault-tolerance-govindarajan-r)  /  [GitHub](https://govidat.github.io/blog/post/blockchain-basics-bft/)    

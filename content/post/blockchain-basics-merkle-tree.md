@@ -53,7 +53,6 @@ Source: [Bitcoin paper](https://bitcoin.org/bitcoin.pdf)
 
 ### Related articles
 
-[Blockchain basics](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  
-[Blockchain basics - Cryptography](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  
-[Blockchain basics - Byzantine fault tolerance](https://www.linkedin.com/pulse/blockchain-basics-byzantine-fault-tolerance-govindarajan-r)  
-
+Blockchain basics    [LinkedIn](https://www.linkedin.com/pulse/blockchain-basics-business-govindarajan-r)  /  [GitHub](https://govidat.github.io/blog/post/blockchain-basics/)     
+Blockchain basics - Cryptography  [LinkedIn](https://www.linkedin.com/pulse/cryptography-basics-blockchain-govindarajan-r)  /  [GitHub](https://govidat.github.io/blog/post/blockchain-basics-cryptography/)    
+Blockchain basics - Byzantine fault tolerance [LinkedIn](https://www.linkedin.com/pulse/blockchain-basics-byzantine-fault-tolerance-govindarajan-r)  /  [GitHub](https://govidat.github.io/blog/post/blockchain-basics-bft/)    
